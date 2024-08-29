@@ -17,3 +17,8 @@ console.log(fullName);
 const highGrade = students.filter(student => student.grade > 70);
 
 console.log(highGrade);
+
+
+const highGradeAndId = students.filter(student => student.grade > 70 && student.id > 120)
+
+console.log(highGradeAndId)
