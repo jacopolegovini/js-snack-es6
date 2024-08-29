@@ -9,9 +9,11 @@ const students = [
 ]
 
 
-const fullName = students.map((student) => {
-    return student.fullName.toUpperCase()
-})
+const fullName = students.map(student =>  student.fullName.toUpperCase());
 
-console.log(fullName)
+console.log(fullName);
 
+
+const highGrade = students.filter(student => student.grade > 70);
+
+console.log(highGrade);
