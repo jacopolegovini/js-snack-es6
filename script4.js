@@ -18,13 +18,11 @@ footballTeams.forEach(footballTeam => {
 console.log(footballTeams)
 console.log('-----------------')
 
-
 const nameAndScoreFootbalTeams = footballTeams.map(footballTeam => {
     const {teamName, foul} = footballTeam;
-    console.log(footballTeam.teamName = teamName)
-
-    
-    console.log(teamName, foul)
+    return {teamName, foul}
 });
+
+console.log(nameAndScoreFootbalTeams)
 
 
