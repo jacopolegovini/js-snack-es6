@@ -1,3 +1,5 @@
+const snack4 = document.querySelector('.snack-4');
+
 const footballTeams = [
     {teamName: 'Juventus', golDone: 0, foul: 0},
     {teamName: 'Milan', golDone: 0, foul: 0},
@@ -24,5 +26,14 @@ const nameAndScoreFootbalTeams = footballTeams.map(footballTeam => {
 });
 
 console.log(nameAndScoreFootbalTeams)
+
+for (let team of nameAndScoreFootbalTeams) {
+    if(team.foul === 1) {
+        snack4.innerHTML += `La squadra ${team.teamName} ha subito ${team.foul} fallo.<br>`
+    } else {
+        snack4.innerHTML += `La squadra ${team.teamName} ha subito ${team.foul} falli.<br>`;
+    }
+    
+}
 
 
