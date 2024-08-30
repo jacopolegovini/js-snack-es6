@@ -11,7 +11,7 @@ const students = [
 
 const fullName = students.map(student =>  student.fullName.toUpperCase());
 
-console.log(fullName);
+console.log(fullName.join(' '));
 
 
 const highGrade = students.filter(student => student.grade > 70);
